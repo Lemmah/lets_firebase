@@ -51,3 +51,16 @@ exports.getItems = functions.https.onRequest((req, res) => {
     getItemsFromDatabase(res)
   });
 });
+
+exports.delete = functions.https.onRequest((req, res) => {
+  return cors(req, res, () => {
+    if(req.method !== 'DELETE') {
+      return res.status(401).json({
+        message: 'Not allowed'
+      })
+    }
+    const id = req.query.id
+    admin.database().ref(`/items/${id}`).remove()
+    getItemsFromDatabase(res)
+  })
+})
