@@ -1,0 +1,182 @@
+[debug] [2018-06-17T22:55:08.443Z] ----------------------------------------------------------------------
+[debug] [2018-06-17T22:55:08.445Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-06-17T22:55:08.445Z] CLI Version:   3.18.6
+[debug] [2018-06-17T22:55:08.445Z] Platform:      darwin
+[debug] [2018-06-17T22:55:08.445Z] Node Version:  v8.11.2
+[debug] [2018-06-17T22:55:08.446Z] Time:          Mon Jun 18 2018 01:55:08 GMT+0300 (EAT)
+[debug] [2018-06-17T22:55:08.446Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-06-17T22:55:08.454Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-17T22:55:08.454Z] > authorizing via signed-in user
+[debug] [2018-06-17T22:55:08.455Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/shop-list-20d5f  
+  
+ Mon Jun 18 2018 01:55:08 GMT+0300 (EAT)
+[debug] [2018-06-17T22:55:09.861Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-17T22:55:09.861Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/shop-list-20d5f/tokens  
+  
+ Mon Jun 18 2018 01:55:09 GMT+0300 (EAT)
+[debug] [2018-06-17T22:55:10.999Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'shop-list-20d5f'...
+[info] 
+[info] i  deploying functions
+[debug] [2018-06-17T22:55:14.519Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "firebase-admin": "~5.12.1",
+    "firebase-functions": "^1.0.3"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2018-06-17T22:55:14.520Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/shop-list-20d5f?view=CONSUMER_VIEW  
+  
+ Mon Jun 18 2018 01:55:14 GMT+0300 (EAT)
+[debug] [2018-06-17T22:55:14.520Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/shop-list-20d5f?view=CONSUMER_VIEW  
+  
+ Mon Jun 18 2018 01:55:14 GMT+0300 (EAT)
+[debug] [2018-06-17T22:55:16.534Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-17T22:55:16.639Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: all necessary APIs are enabled
+[debug] [2018-06-17T22:55:16.640Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/shop-list-20d5f  
+  
+ Mon Jun 18 2018 01:55:16 GMT+0300 (EAT)
+[debug] [2018-06-17T22:55:18.353Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-17T22:55:18.353Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/396045756787:getServerAppConfig  
+  
+ Mon Jun 18 2018 01:55:18 GMT+0300 (EAT)
+[debug] [2018-06-17T22:55:19.276Z] <<< HTTP RESPONSE 200
+[info] i  functions: preparing functions directory for uploading...
+[debug] [2018-06-17T22:55:19.278Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/shop-list-20d5f/configs  
+  
+ Mon Jun 18 2018 01:55:19 GMT+0300 (EAT)
+[debug] [2018-06-17T22:55:19.890Z] <<< HTTP RESPONSE 200
+[info] i  functions: packaged functions (39.81 KB) for uploading
+[debug] [2018-06-17T22:55:20.076Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/shop-list-20d5f/locations/us-central1/functions:generateUploadUrl  
+  
+ Mon Jun 18 2018 01:55:20 GMT+0300 (EAT)
+[debug] [2018-06-17T22:55:20.736Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-17T22:55:20.736Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-eacf392f-d0e4-4f33-ace6-d2e0c56c123e/cc6e5634-4581-4fd8-aa0c-bfe2679db9eb.zip?GoogleAccessId=service-396045756787@gcf-admin-robot.iam.gserviceaccount.com&Expires=1529277920&Signature=c7lra3KT9d7D4eIlLGot9LMdIJTjNzc%2B6bOP1yy1FeSmcDW3n3InIv1eRee20OAeadW9Vn8JT7fg3GYl44MUIdLrF%2BYbeA5zMow%2FyXroD2aCjcjmJ218bHzah2iyzGCaMRo5C%2FdM%2Bj9JxGFRjjzCTAsr%2B7KYEDSjLKh8BHk0E%2F%2F7qrh1FDzb7D%2Bp4zveddNhcrEBXOtCr9lZybbKZ3sTrhmJMdjkoAglG2IisShwUZmGECth5p1ctzgcHXa7jW4SZS3sUDNsdCmRuPV%2FmDhpRZNcnbUwzGReoHKKaWAciTZtEhkHrGYKZmNaYPCGJj1US%2F5tvFvyur6xEKA7vrBzFQ%3D%3D  
+ ReadStream {
+  _readableState: 
+   ReadableState {
+     objectMode: false,
+     highWaterMark: 65536,
+     buffer: BufferList { head: [Object], tail: [Object], length: 1 },
+     length: 40768,
+     pipes: null,
+     pipesCount: 0,
+     flowing: null,
+     ended: true,
+     endEmitted: false,
+     reading: false,
+     sync: false,
+     needReadable: false,
+     emittedReadable: true,
+     readableListening: false,
+     resumeScheduled: false,
+     destroyed: false,
+     defaultEncoding: 'utf8',
+     awaitDrain: 0,
+     readingMore: false,
+     decoder: null,
+     encoding: null },
+  readable: true,
+  domain: null,
+  _events: { end: [Function] },
+  _eventsCount: 1,
+  _maxListeners: undefined,
+  path: '/var/folders/bc/lp_kl6j928j9z007vkx2hf_80000gn/T/firebase-functions-1201C4nhjAghGyaA.zip',
+  fd: 19,
+  flags: 'r',
+  mode: 438,
+  start: undefined,
+  end: Infinity,
+  autoClose: true,
+  pos: undefined,
+  bytesRead: 40768 } 
+ Mon Jun 18 2018 01:55:20 GMT+0300 (EAT)
+[debug] [2018-06-17T22:55:22.143Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: functions folder uploaded successfully
+[debug] [2018-06-17T22:55:22.145Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/projects/shop-list-20d5f/locations/us-central1/functions  
+  
+ Mon Jun 18 2018 01:55:22 GMT+0300 (EAT)
+[debug] [2018-06-17T22:55:22.758Z] <<< HTTP RESPONSE 200
+[info] i  functions: updating function helloWorld...
+[debug] [2018-06-17T22:55:22.761Z] Trigger is:  {"httpsTrigger":{}}
+[info] i  functions: updating function addItem...
+[debug] [2018-06-17T22:55:22.762Z] Trigger is:  {"httpsTrigger":{}}
+[debug] [2018-06-17T22:55:22.763Z] >>> HTTP REQUEST PATCH https://cloudfunctions.googleapis.com/v1/projects/shop-list-20d5f/locations/us-central1/functions/helloWorld 
+query params: {"updateMask":"sourceUploadUrl,name,labels,httpsTrigger"} 
+ { sourceUploadUrl: 'https://storage.googleapis.com/gcf-upload-us-central1-eacf392f-d0e4-4f33-ace6-d2e0c56c123e/cc6e5634-4581-4fd8-aa0c-bfe2679db9eb.zip?GoogleAccessId=service-396045756787@gcf-admin-robot.iam.gserviceaccount.com&Expires=1529277920&Signature=c7lra3KT9d7D4eIlLGot9LMdIJTjNzc%2B6bOP1yy1FeSmcDW3n3InIv1eRee20OAeadW9Vn8JT7fg3GYl44MUIdLrF%2BYbeA5zMow%2FyXroD2aCjcjmJ218bHzah2iyzGCaMRo5C%2FdM%2Bj9JxGFRjjzCTAsr%2B7KYEDSjLKh8BHk0E%2F%2F7qrh1FDzb7D%2Bp4zveddNhcrEBXOtCr9lZybbKZ3sTrhmJMdjkoAglG2IisShwUZmGECth5p1ctzgcHXa7jW4SZS3sUDNsdCmRuPV%2FmDhpRZNcnbUwzGReoHKKaWAciTZtEhkHrGYKZmNaYPCGJj1US%2F5tvFvyur6xEKA7vrBzFQ%3D%3D',
+  name: 'projects/shop-list-20d5f/locations/us-central1/functions/helloWorld',
+  labels: { 'deployment-tool': 'cli-firebase' },
+  httpsTrigger: {} } 
+ Mon Jun 18 2018 01:55:22 GMT+0300 (EAT)
+[debug] [2018-06-17T22:55:22.764Z] >>> HTTP REQUEST PATCH https://cloudfunctions.googleapis.com/v1/projects/shop-list-20d5f/locations/us-central1/functions/addItem 
+query params: {"updateMask":"sourceUploadUrl,name,labels,httpsTrigger"} 
+ { sourceUploadUrl: 'https://storage.googleapis.com/gcf-upload-us-central1-eacf392f-d0e4-4f33-ace6-d2e0c56c123e/cc6e5634-4581-4fd8-aa0c-bfe2679db9eb.zip?GoogleAccessId=service-396045756787@gcf-admin-robot.iam.gserviceaccount.com&Expires=1529277920&Signature=c7lra3KT9d7D4eIlLGot9LMdIJTjNzc%2B6bOP1yy1FeSmcDW3n3InIv1eRee20OAeadW9Vn8JT7fg3GYl44MUIdLrF%2BYbeA5zMow%2FyXroD2aCjcjmJ218bHzah2iyzGCaMRo5C%2FdM%2Bj9JxGFRjjzCTAsr%2B7KYEDSjLKh8BHk0E%2F%2F7qrh1FDzb7D%2Bp4zveddNhcrEBXOtCr9lZybbKZ3sTrhmJMdjkoAglG2IisShwUZmGECth5p1ctzgcHXa7jW4SZS3sUDNsdCmRuPV%2FmDhpRZNcnbUwzGReoHKKaWAciTZtEhkHrGYKZmNaYPCGJj1US%2F5tvFvyur6xEKA7vrBzFQ%3D%3D',
+  name: 'projects/shop-list-20d5f/locations/us-central1/functions/addItem',
+  labels: { 'deployment-tool': 'cli-firebase' },
+  httpsTrigger: {} } 
+ Mon Jun 18 2018 01:55:22 GMT+0300 (EAT)
+[debug] [2018-06-17T22:55:23.373Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-17T22:55:23.374Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-17T22:55:23.376Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/projects/shop-list-20d5f/locations/us-central1/functions  
+  
+ Mon Jun 18 2018 01:55:23 GMT+0300 (EAT)
+[debug] [2018-06-17T22:55:23.987Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-17T22:55:23.989Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/c2hvcC1saXN0LTIwZDVmL3VzLWNlbnRyYWwxL2hlbGxvV29ybGQvZ1JwdUlYM0ZtdFU  
+  
+ Mon Jun 18 2018 01:55:23 GMT+0300 (EAT)
+[debug] [2018-06-17T22:55:23.989Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/c2hvcC1saXN0LTIwZDVmL3VzLWNlbnRyYWwxL2FkZEl0ZW0vSHZBWU0tNTdBTDA  
+  
+ Mon Jun 18 2018 01:55:23 GMT+0300 (EAT)
+[debug] [2018-06-17T22:55:24.602Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-17T22:55:24.604Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-17T22:55:26.609Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/c2hvcC1saXN0LTIwZDVmL3VzLWNlbnRyYWwxL2FkZEl0ZW0vSHZBWU0tNTdBTDA  
+  
+ Mon Jun 18 2018 01:55:26 GMT+0300 (EAT)
+[debug] [2018-06-17T22:55:26.609Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/c2hvcC1saXN0LTIwZDVmL3VzLWNlbnRyYWwxL2hlbGxvV29ybGQvZ1JwdUlYM0ZtdFU  
+  
+ Mon Jun 18 2018 01:55:26 GMT+0300 (EAT)
+[debug] [2018-06-17T22:55:27.061Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-17T22:55:27.096Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-17T22:55:29.064Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/c2hvcC1saXN0LTIwZDVmL3VzLWNlbnRyYWwxL2FkZEl0ZW0vSHZBWU0tNTdBTDA  
+  
+ Mon Jun 18 2018 01:55:29 GMT+0300 (EAT)
+[debug] [2018-06-17T22:55:29.102Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/c2hvcC1saXN0LTIwZDVmL3VzLWNlbnRyYWwxL2hlbGxvV29ybGQvZ1JwdUlYM0ZtdFU  
+  
+ Mon Jun 18 2018 01:55:29 GMT+0300 (EAT)
+[debug] [2018-06-17T22:55:29.536Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-17T22:55:29.541Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-17T22:55:31.542Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/c2hvcC1saXN0LTIwZDVmL3VzLWNlbnRyYWwxL2FkZEl0ZW0vSHZBWU0tNTdBTDA  
+  
+ Mon Jun 18 2018 01:55:31 GMT+0300 (EAT)
+[debug] [2018-06-17T22:55:31.542Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/c2hvcC1saXN0LTIwZDVmL3VzLWNlbnRyYWwxL2hlbGxvV29ybGQvZ1JwdUlYM0ZtdFU  
+  
+ Mon Jun 18 2018 01:55:31 GMT+0300 (EAT)
+[debug] [2018-06-17T22:55:32.178Z] <<< HTTP RESPONSE 200
+[warn] ⚠  functions[addItem]: Deployment error.
+[info] Function load error: Code in file index.js can't be loaded.
+Did you list all required modules in the package.json dependencies?
+Detailed stack trace: Error: Cannot find module 'cors'
+    at Function.Module._resolveFilename (module.js:476:15)
+    at Function.Module._load (module.js:424:25)
+    at Module.require (module.js:504:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (/user_code/index.js:2:29)
+    at Module._compile (module.js:577:32)
+    at Object.Module._extensions..js (module.js:586:10)
+    at Module.load (module.js:494:32)
+    at tryModuleLoad (module.js:453:12)
+    at Function.Module._load (module.js:445:3)
+[debug] [2018-06-17T22:55:32.186Z] <<< HTTP RESPONSE 200
